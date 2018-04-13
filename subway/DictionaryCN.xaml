@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:subway"
+                    xmlns:CN="clr-namespace:System;assembly=mscorlib">
+    <CN:String x:Key="port">郑州地铁</CN:String>
+    <CN:String x:Key="kaihu">开户</CN:String>
+    <CN:String x:Key="xiaohu">销户</CN:String>
+    <CN:String x:Key="xianshi">显示</CN:String>
+    <CN:String x:Key="chongzhi">充值</CN:String>
+    <CN:String x:Key="yuyan">中文</CN:String>
+    <CN:String x:Key="fanhui">返回上一步</CN:String>
+    <CN:String x:Key="yonghuming">用户名：</CN:String>
+    <CN:String x:Key="xingming">姓名：</CN:String>
+    <CN:String x:Key="mima">密码：</CN:String>
+    <CN:String x:Key="shenfenzheng">身份证号：</CN:String>
+    <CN:String x:Key="shoujihao">手机号：</CN:String>
+    <CN:String x:Key="queding">确定</CN:String>
+    <CN:String x:Key="quxiao">取消</CN:String>
+    <CN:String x:Key="chongzhijine">充值金额：</CN:String>
+    
+</ResourceDictionary>

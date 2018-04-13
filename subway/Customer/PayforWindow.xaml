@@ -1,0 +1,38 @@
+﻿<Window x:Class="subway.Customer.PayforWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:subway.Customer"
+        mc:Ignorable="d"
+         Title="登录" Height="750" Width="1000"  Background="SkyBlue" WindowState="Maximized">
+    <Grid>
+        <Label  Foreground="White" FontSize="35" HorizontalAlignment="Left"
+                   Content="郑州地铁" VerticalAlignment="Top"  Margin="10,0,0,0" />
+        <Label Foreground="Yellow" FontSize="15" HorizontalAlignment="Left"
+                   Content="ZHENGZHOU METRO" Margin="0,54,0,-54" />
+        <Label Foreground="White" FontSize="60" HorizontalAlignment="Center"
+                   Content="郑 州 地 铁" />
+        <Label Name="label1" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="30" Content="剩余输入时间还有:" Margin="10,0,0,80"/>
+        <Label Name="label2" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="40" Content="100秒" Margin="72,0,0,10" Foreground="Red"/>
+        <Canvas Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="267,119,225,100" >
+
+            <Label Content="用户名：" Canvas.Left="84" Canvas.Top="137" FontSize="20" />
+            <TextBox Name="textBoxUserName" Height="30" Canvas.Left="200" Canvas.Top="140" Width="150" FontSize="20"/>
+            <Canvas Name="errorTip1" Width="20" Height="20" Canvas.Left="231" Canvas.Top="18">
+                <Ellipse Fill="Red" Width="20" Height="20" Canvas.Left="135" Canvas.Top="128"/>
+                <TextBlock Text="!" Canvas.Left="143" Canvas.Top="128"/>
+            </Canvas>
+            <Label Content="密码：" Canvas.Left="84" Canvas.Top="201" FontSize="20"/>
+            <PasswordBox Name="password" PasswordChar="*"  Canvas.Left="200" Canvas.Top="201" Width="150" Height="30" FontSize="20" Password=""/>
+            <Canvas Name="errorTip2" Width="20" Height="20" Canvas.Left="231" Canvas.Top="58" RenderTransformOrigin="3.925,0.05">
+                <Ellipse Fill="Red" Width="20" Height="20" Canvas.Left="135" Canvas.Top="150" RenderTransformOrigin="6.3,6.725"/>
+                <TextBlock Text="!" Canvas.Left="143" Canvas.Top="150"/>
+            </Canvas>
+            <Button Name="btnOK" Content="登录" Width="100" Height="35" Canvas.Left="84" Canvas.Top="360" Click="btnOK_Click"/>
+            <Button Name="btnCancel" Content="取消" Width="100" Height="35" Canvas.Left="400" Canvas.Top="465" Click="btnCancel_Click_1" IsCancel="True" />
+            <TextBlock Name="textBlockErrorInfo" Canvas.Left="132" Canvas.Top="426" Width="240" Foreground="Red" TextAlignment="Center"/>
+            <Button x:Name="btn_Register" Content="注册" Width="100" Canvas.Left="331" Canvas.Top="360" Click="btnOK_Register" Height="35"/>
+        </Canvas>
+    </Grid>
+</Window>

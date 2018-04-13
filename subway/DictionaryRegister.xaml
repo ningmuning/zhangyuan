@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:subway"
+                    xmlns:CN="clr-namespace:System;assembly=mscorlib">
+    <CN:String x:Key="port">  郑  州  地  铁</CN:String>
+    <CN:String x:Key="chuzhan">出站</CN:String>
+    <CN:String x:Key="jinzhan">进站</CN:String>
+    <CN:String x:Key="denglu">登录</CN:String>
+    <CN:String x:Key="quxiao">取消</CN:String>
+    <CN:String x:Key="yuyan">中文</CN:String>
+    <CN:String x:Key="guanli">管理功能</CN:String>
+    <CN:String x:Key="goupiao">购票功能</CN:String>
+</ResourceDictionary>

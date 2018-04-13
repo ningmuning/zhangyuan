@@ -1,0 +1,35 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:subway"
+                    xmlns:EN="clr-namespace:System;assembly=mscorlib">
+    <EN:String x:Key="port">Zhenzhou Railway</EN:String>
+    <EN:String x:Key="qxuanze">Please select route</EN:String>
+    <EN:String x:Key="zongtu">Key map</EN:String>
+    <EN:String x:Key="yihaoxian">First</EN:String>
+    <EN:String x:Key="yuyan">English</EN:String>
+    <EN:String x:Key="danpiao">Single</EN:String>
+    <EN:String x:Key="doublepiao">Double</EN:String>
+    <EN:String x:Key="yixuanzem">Selected amount</EN:String>
+    <EN:String x:Key="xuanze">Select amount</EN:String>
+    <EN:String x:Key="queding">Ensure</EN:String>
+    <EN:String x:Key="quxiao">Cancel</EN:String>
+    <EN:String x:Key="yixuanze">Selected number</EN:String>
+    <EN:String x:Key="one">One</EN:String>
+    <EN:String x:Key="two">Two</EN:String>
+    <EN:String x:Key="three">Three</EN:String>
+    <EN:String x:Key="four">Four</EN:String>
+    <EN:String x:Key="five">Five</EN:String>
+    <EN:String x:Key="six">Six</EN:String>
+    <EN:String x:Key="seven">Seven</EN:String>
+    <EN:String x:Key="eight">Eight</EN:String>
+    <EN:String x:Key="nine">Nine</EN:String>
+    <EN:String x:Key="ten">Ten</EN:String>
+    <EN:String x:Key="twoyuan">Two yuan</EN:String>
+    <EN:String x:Key="threeyuan">Three yuan</EN:String>
+    <EN:String x:Key="fouryuan">Four yuan</EN:String>
+    <EN:String x:Key="fiveyuan">Five yuan</EN:String>
+    <EN:String x:Key="sixyuan">Six yuan</EN:String>
+    <EN:String x:Key="zero">Zero</EN:String>
+    <EN:String x:Key="zeroyuan">Zero</EN:String>
+    
+</ResourceDictionary>

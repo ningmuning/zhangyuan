@@ -1,0 +1,91 @@
+﻿<Window x:Class="subway.Customer.MessageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:subway.Customer"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="750" Width="1000" WindowState="Maximized" Background="#1B4F93">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="82*"/>
+            <ColumnDefinition Width="119"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="591*"/>
+            <RowDefinition Height="69" />
+        </Grid.RowDefinitions>
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.ColumnSpan="2" Height="59">
+            <Label Foreground="White" FontSize="25" HorizontalAlignment="Left"
+                   Content="郑州地铁" VerticalAlignment="Top" Margin="20,0,0,0" Height="42" Width="110"/>
+            <Label Foreground="Yellow" FontSize="10" HorizontalAlignment="Left"
+                   Content="ZHENGZHOU METRO" VerticalAlignment="Bottom" Margin="17,0,0,0" Height="23" Width="113"/>
+            <Label Foreground="White" FontSize="40" HorizontalAlignment="Center"
+                   Content="郑州地铁" RenderTransformOrigin="3.256,0.38" Margin="374,0,-95,0" Width="594"/>
+            <Label  Name="label0" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Background="WhiteSmoke" Margin="0,5,0,64" Grid.RowSpan="2" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="78*"/>
+                <RowDefinition Height="282*"/>
+                <RowDefinition Height="122*"/>
+                <RowDefinition Height="109*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="197" />
+                <ColumnDefinition Width="304"/>
+                <ColumnDefinition Width="229*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="3" Margin="0,0,6,0">
+                <Label Content="用户购票信息" Foreground="Red" FontSize="40" Margin="0,10,0,-10" />
+            </Grid>
+            <StackPanel Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="0,0,6,0">
+                <StackPanel.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="Margin" Value="30 0 0 0" />
+                        <Setter Property="FontSize" Value="32"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Label Content="用 户 名："/>
+                <Label Content="票      种：" />
+                <Label Content="起始车站：" />
+                <Label Content="目的车站：" />
+                <Label Content="单      价：" />
+                <Label Content="购票数量：" />
+                <Label Margin="10 -15 0 0" Content="--------------------------------"/>
+            </StackPanel>
+            <Grid Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="6,52,0,58" Grid.RowSpan="2">
+                <Label Content="已付金额:" Grid.Row="0" Grid.Column="0" FontSize="36" Foreground="Red" Margin="20 0 0 0"/>
+                <Label Name="label1" Content="" FontSize="30" Foreground="Red" Margin="220 0 0 0"/>
+                <Label Name="label2" Content="" FontSize="30" Foreground="Red" Margin="220 60 0 0"/>
+                <Label Content="账户余额:" FontSize="36" Foreground="Red" Margin="20 60 0 0"/>
+            </Grid>
+            <StackPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="1,0,6,75" Grid.RowSpan="2">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="Margin" Value="30 9 0 0" />
+                        <Setter Property="FontSize" Value="32" />
+                        <Setter Property="Foreground" Value="Blue" />
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Name="textblock0" Text=""/>
+                <TextBlock Name="textblock1" Text="单程票"/>
+                <TextBlock Name="textblock2" Text="市体育中心"/>
+                <TextBlock Name="textblock3" Text=""/>
+                <TextBlock Name="textblock4" Text="0 元"/>
+                <TextBlock x:Name="textblock5" Text="0 张" Height="38" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="2" Height="69" VerticalAlignment="Top">
+            <Button Name="ButtonOK"  Click="ButtonOK_Click" Content="确定"  VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="120" Background="#F1AF00" FontSize="25" IsDefault="True" />
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="2">
+            <Button Name="Button_cancel" Click="Button_cancel_Click" Background="Red" Content="上一步" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="120" FontSize="25" IsCancel="True" />
+        </Grid>
+    </Grid>
+</Window>

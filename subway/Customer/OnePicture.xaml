@@ -1,0 +1,130 @@
+﻿<Page x:Class="Home.Customer.OnePicture"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+	Title="OnePicture" d:DesignHeight="300" d:DesignWidth="300">
+    <Page.Resources>
+        <Style TargetType="Button">
+            <EventSetter Event="Click" Handler="Button_Click"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Ellipse x:Name="Ellipse1" Width="55" Height="55">
+                            <Ellipse.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop x:Name="color1" Color="White" Offset="0"/>
+                                    <GradientStop x:Name="color3" Color="Gray" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Ellipse1" Property="Width" Value="60"/>
+                                <Setter TargetName="Ellipse1" Property="Height" Value="60"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Ellipse1" Property="Ellipse.Fill">
+                                    <Setter.Value>
+                                        <RadialGradientBrush>
+                                            <GradientStop Offset="0" Color="White"/>
+                                            <GradientStop Offset="1" Color="Red"/>
+                                        </RadialGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="44*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="39*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/subway;component/images/yihaoxian.jpg"/>
+        </Grid.Background>
+        <Button Name="st" Grid.Column="1" Tag="市体育中心"  Grid.Row="1" BorderThickness="0"/>
+        <Button Name="bx" Grid.Column="3" Tag="博学湖" Grid.Row="1" BorderThickness="0" />
+
+        <Button Name="zz" Grid.Column="5" Tag="郑州东站" Grid.Row="1" BorderThickness="0"/>
+
+        <Button Name="df" Grid.Column="7" Tag="东风南路" Grid.Row="1" BorderThickness="0" />
+
+
+        <Button Name="ny" Grid.Column="9" Tag="农业南路" Grid.Row="1" BorderThickness="0"/>
+
+
+        <Button Name="hh" Grid.Column="9" Tag="紫荆山" Grid.Row="3" BorderThickness="0" />
+
+
+        <Button Name="hz" Grid.Column="7" Tag="燕庄" Grid.Row="3" BorderThickness="0" />
+
+
+        <Button Name="mh" Grid.Column="5" Tag="明航路" Grid.Row="3" BorderThickness="0" />
+
+
+        <Button Name="yz" Grid.Column="3" Tag="会展中心" Grid.Row="3" BorderThickness="0" />
+
+
+        <Button Name="zj" Grid.Column="1" Tag="黄河南路" Grid.Row="3" BorderThickness="0" />
+
+
+        <Button Name="rm" Grid.Column="1" Tag="人民路" Grid.Row="5" BorderThickness="0"/>
+
+
+        <Button Name="eq" Grid.Column="3" Tag="二七广场" Grid.Row="5" BorderThickness="0" />
+
+
+        <Button Name="zzh" Grid.Column="5" Grid.Row="5" Tag="郑州火车站" BorderThickness="0"/>
+
+
+        <Button Name="yxy" Grid.Column="7" Grid.Row="5" Tag="医学院" BorderThickness="0"/>
+
+
+        <Button Name="lcgc" Grid.Column="9" Grid.Row="5" Tag="绿城广场" BorderThickness="0"/>
+
+
+        <Button Name="bsg" Grid.Column="9" Tag="碧沙岗" Grid.Row="7" BorderThickness="0"/>
+
+
+        <Button Name="tbl" Grid.Column="7" Tag="桐柏路" Grid.Row="7" BorderThickness="0" />
+
+
+        <Button Name="qll" Grid.Column="5" Grid.Row="7" Tag="秦岭路" BorderThickness="0" />
+
+
+        <Button Name="xsh" Grid.Column="3" Grid.Row="7" Tag="西三环" BorderThickness="0" />
+
+
+        <Button Name="xlh" Grid.Column="1" Grid.Row="7" Tag="西流湖" BorderThickness="0"/>
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDbModelStoreContainer" CdmEntityContainer="MyDbEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="MyDbModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="XingMing" ColumnName="XingMing" />
+          <ScalarProperty Name="Identify" ColumnName="Identify" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="YuE" ColumnName="YuE" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="YongHuMing" ColumnName="YongHuMing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Train">
+      <EntityTypeMapping TypeName="MyDbModel.Train">
+        <MappingFragment StoreEntitySet="Train">
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Remain" ColumnName="Remain" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Stp" ColumnName="Stp" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

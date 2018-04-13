@@ -1,0 +1,55 @@
+﻿<Window x:Class="subway.EnterAndLeave.Enter1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:subway.EnterAndLeave"
+        mc:Ignorable="d"
+        Title="Enter1" Height="750" Width="1380" WindowState="Maximized">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFB6D3C4" Offset="0.003"/>
+                <GradientStop Color="#FF22A865" Offset="1"/>
+                <GradientStop Color="#FFBA8662" Offset="0.565"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="443,100,0,0" 
+                   FontSize="50" 
+                   TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.6,3.547">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1735F1" Offset="0.013"/>
+                    <GradientStop Color="#FFB82236" Offset="1"/>
+                    <GradientStop Color="#FF8F8749" Offset="0.383"/>
+                    <GradientStop Color="#FFA4533F" Offset="0.7"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="443,208,0,0" 
+            FontSize="50" Foreground="Red"
+            TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.6,3.547">
+        </TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="443,328,0,0" 
+            FontSize="50" 
+            TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.6,3.547">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1735F1" Offset="0.013"/>
+                    <GradientStop Color="#FFB82236" Offset="1"/>
+                    <GradientStop Color="#FF8F8749" Offset="0.383"/>
+                    <GradientStop Color="#FFA4533F" Offset="0.7"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="443,451,0,0" 
+            FontSize="50" Foreground="Red"
+            TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.6,3.547">
+        </TextBlock>
+        <Button x:Name="button" Content="确定" HorizontalAlignment="Left" 
+                FontSize="30"
+                Margin="572,555,0,0" VerticalAlignment="Top" Width="230" Height="55" RenderTransformOrigin="-0.2,0.327" Click="button_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:subway"
+                    xmlns:CN="clr-namespace:System;assembly=mscorlib">
+    <CN:String x:Key="port">Zhengzhou Railway Station</CN:String>
+    <CN:String x:Key="kaihu">Open An account</CN:String>
+    <CN:String x:Key="xiaohu">Close An account</CN:String>
+    <CN:String x:Key="xianshi">Display and Query</CN:String>
+    <CN:String x:Key="chongzhi">Top Up</CN:String>
+    <CN:String x:Key="yuyan">English</CN:String>
+    <CN:String x:Key="fanhui">Return</CN:String>
+    <CN:String x:Key="yonghuming">UserName：</CN:String>
+    <CN:String x:Key="xingming">Name：</CN:String>
+    <CN:String x:Key="mima">Password：</CN:String>
+    <CN:String x:Key="shenfenzheng">IDNumber：</CN:String>
+    <CN:String x:Key="shoujihao">Tele：</CN:String>
+    <CN:String x:Key="queding">OK</CN:String>
+    <CN:String x:Key="quxiao">Cancle</CN:String>
+    <CN:String x:Key="chongzhijine">Recharge Amount:</CN:String>
+</ResourceDictionary>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="subway.MyManage.ManagerLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:winform="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:subway.MyManage"
+        mc:Ignorable="d"
+        Title="管理员" Height="750" Width="1000" WindowState="Maximized" Background="AliceBlue">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/DictionaryAdmin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF9FDFD" Offset="0" />
+                <GradientStop Color="#FFA8E6C4" Offset="1" />
+                <GradientStop Color="#FFB5EEEE" Offset="0.502" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="location" Foreground="Wheat" FontSize="50" HorizontalAlignment="Center"
+                  Content="{DynamicResource port}"  Margin="388,10,120,640" Width="484" VerticalAlignment="Center" Height="69" />
+        <Label x:Name="label_Copy" Content="{DynamicResource mima}" HorizontalAlignment="Left" FontSize="25" Margin="181,347,0,0" VerticalAlignment="Top" Width="150" />
+        <TextBox x:Name="textBox" Height="54" Margin="351,171,137,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25"/>
+        <PasswordBox x:Name="passwordBox" PasswordChar="*" Margin="353,335,137,0" VerticalAlignment="Top" Height="55" FontSize="25" Password=""/>
+        <Label x:Name="label_Copy1" Content="{DynamicResource admin}" HorizontalAlignment="Left" Margin="180,180,0,450" Width="138" FontSize="25"/>
+        <Button x:Name="button" FontSize="20" Content="{DynamicResource denglu}" Margin="175,0,703,130" VerticalAlignment="Bottom" Click="button_Click" Height="47" Width="103" IsDefault="True" />
+        <Button x:Name="button1" Content="{DynamicResource yuyan}" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Height="47" Width="103" Click="button1_Click" />
+        <Button x:Name="button_Copy" FontSize="20" Content="{DynamicResource quxiao}" Margin="0,0,167,130" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="103" Height="47" Click="button_Copy_Click" IsCancel="True"/>
+        <StackPanel HorizontalAlignment="Left" Margin="21,206,0,342" Width="144">
+            <Image Source="/images/subway.jpg" Height="172" RenderTransformOrigin="0.548,0.275" />
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Home.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="登录" Height="750" Width="1380"  Background="SkyBlue" WindowState="Maximized">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/DictionaryRegister.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Label  Foreground="White" FontSize="35" HorizontalAlignment="Left"
+                   Content="郑州地铁" VerticalAlignment="Top"  Margin="10,0,0,0" />
+        <Label Foreground="Yellow" FontSize="15" HorizontalAlignment="Left"
+                   Content="ZHENGZHOU METRO" Margin="0,54,0,10" />
+        <Label Name="label1" Foreground="White" FontSize="50" 
+                   Content="{DynamicResource port}" Margin="530,-2,0,0" Width="439" Height="719" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <Button x:Name="ChangLanguage" Content="{DynamicResource yuyan}" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="130" Height="50" Click="ChangLanguage_Click"/>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="212,3,185,0">
+            <Label FontSize="40" Margin="112,288,98,169.158" >
+            </Label>
+            <ComboBox Name="comboBox1" SelectedIndex="0" Width="348" Height="62" FontSize="38" Margin="336,336,291,318" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.12,1.683">
+                <ComboBoxItem Content="{DynamicResource goupiao}"  />
+                <ComboBoxItem Content="{DynamicResource guanli}" />
+            </ComboBox>
+            <Button Name="btnOK" Content="{DynamicResource denglu}" Margin="143,481,665,169" FontSize="30" Click="btnOK_Click" IsDefault="True"/>
+
+            <Button Name="btnCancel" Content="{DynamicResource quxiao}" Margin="665,481,143,169" FontSize="30"  Click="btnCancel_Click" IsCancel="True"/>
+          
+        </Grid>
+        <Button Name="buttonEnter" Content="{DynamicResource jinzhan}" FontSize="25" HorizontalAlignment="Left" Margin="1256,25,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="buttonEnter_Click"/>
+        <Button Name="buttonLeave" Content="{DynamicResource chuzhan}" FontSize="25" HorizontalAlignment="Left" Margin="1256,96,0,0" VerticalAlignment="Top" Width="75" Height="40" Click="buttonLeave_Click"/>
+    </Grid>
+</Window>

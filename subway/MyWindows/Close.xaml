@@ -1,0 +1,29 @@
+﻿<Page x:Class="subway.MyWindows.Close"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:subway.MyWindows"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+      Background="white"
+      Title="Close">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/DictionaryCN.xaml"/>
+                <!--<ResourceDictionary Source="/DictionaryEN.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom" HorizontalAlignment="Center" VerticalAlignment="Center" Height="238" Margin="119,105,97,157" Width="284">
+            <Label x:Name="label1" Content="{DynamicResource yonghuming}" HorizontalAlignment="Left" Margin="26,58,0,0" VerticalAlignment="Top" Width="71"/>
+            <Label x:Name="label2" Content="{DynamicResource mima}" HorizontalAlignment="Left" Margin="26,96,0,0" VerticalAlignment="Top" Width="71"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="102,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <PasswordBox x:Name="passwordBox" PasswordChar="*" HorizontalAlignment="Left" Height="23" Margin="102,98,0,0"  VerticalAlignment="Top" Width="120" Password="" />
+            <Button x:Name="button_OK" Content="{DynamicResource queding}" HorizontalAlignment="Left" Margin="26,174,0,0" VerticalAlignment="Top" Width="75" IsDefault="True"/>
+            <Button x:Name="button_Cancel" Content="{DynamicResource quxiao}" HorizontalAlignment="Left" Margin="187,174,0,0" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+        </Grid>
+    </DockPanel>
+</Page>
